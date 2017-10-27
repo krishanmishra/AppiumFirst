@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+    <line>
+      <![CDATA[app context and orientation of app]]>
+    </line>
+    <line>
+      <![CDATA[User enters username]]>
+    </line>
+    <line>
+      <![CDATA[User enters Password]]>
+    </line>
+    <line>
+      <![CDATA[User taps on Sign In button]]>
+    </line>
+    <line>
+      <![CDATA[User is logged into application successfully]]>
+    </line>
+    <line>
+      <![CDATA[User taps on the Sign out button]]>
+    </line>
+    <line>
+      <![CDATA[User is logged out from application successfully]]>
+    </line>
+    <line>
+      <![CDATA[User enters username]]>
+    </line>
+    <line>
+      <![CDATA[User enters Password]]>
+    </line>
+    <line>
+      <![CDATA[User taps on Sign In button]]>
+    </line>
+    <line>
+      <![CDATA[Validation message appears]]>
+    </line>
+    <line>
+      <![CDATA[About screen display]]>
+    </line>
+    <line>
+      <![CDATA[User taps on the Sign out button]]>
+    </line>
+    <line>
+      <![CDATA[About screen display]]>
+    </line>
+    <line>
+      <![CDATA[User taps on the Sign out button]]>
+    </line>
+    <line>
+      <![CDATA[search vehicle with VIN and result]]>
+    </line>
+    <line>
+      <![CDATA[User tap on back action return to Home]]>
+    </line>
+    <line>
+      <![CDATA[User taps on the Sign out button]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="276628" started-at="2017-10-24T11:02:49Z" finished-at="2017-10-24T11:07:25Z">
+    <groups>
+    </groups>
+    <test name=" Login Test" duration-ms="276628" started-at="2017-10-24T11:02:49Z" finished-at="2017-10-24T11:07:25Z">
+      <class name="com.ivm.android.scripts.Settings">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ivm.android.scripts.Settings@71423665]" name="setUp" is-config="true" duration-ms="10779" started-at="2017-10-24T16:33:55Z" finished-at="2017-10-24T16:34:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="SettingperissionOFF()[pri:0, instance:com.ivm.android.scripts.Settings@71423665]" name="SettingperissionOFF" duration-ms="68644" started-at="2017-10-24T16:34:05Z" finished-at="2017-10-24T16:35:14Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About screen display]]>
+            </line>
+            <line>
+              <![CDATA[User taps on the Sign out button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SettingperissionOFF -->
+        <test-method status="PASS" signature="SettingperissionON()[pri:0, instance:com.ivm.android.scripts.Settings@71423665]" name="SettingperissionON" duration-ms="70544" started-at="2017-10-24T16:35:14Z" finished-at="2017-10-24T16:36:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[About screen display]]>
+            </line>
+            <line>
+              <![CDATA[User taps on the Sign out button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SettingperissionON -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.ivm.android.scripts.Settings@71423665]" name="afterClass" is-config="true" duration-ms="1886" started-at="2017-10-24T16:36:25Z" finished-at="2017-10-24T16:36:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.ivm.android.scripts.Settings -->
+      <class name="com.ivm.android.scripts.SearchAppraisalList">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ivm.android.scripts.SearchAppraisalList@20398b7c]" name="setUp" is-config="true" duration-ms="10835" started-at="2017-10-24T16:36:26Z" finished-at="2017-10-24T16:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchbyVehicle()[pri:0, instance:com.ivm.android.scripts.SearchAppraisalList@20398b7c]" name="searchbyVehicle" duration-ms="45913" started-at="2017-10-24T16:36:37Z" finished-at="2017-10-24T16:37:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[search vehicle with VIN and result]]>
+            </line>
+            <line>
+              <![CDATA[User tap on back action return to Home]]>
+            </line>
+            <line>
+              <![CDATA[User taps on the Sign out button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchbyVehicle -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.ivm.android.scripts.SearchAppraisalList@20398b7c]" name="afterClass" is-config="true" duration-ms="1907" started-at="2017-10-24T16:37:23Z" finished-at="2017-10-24T16:37:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.ivm.android.scripts.SearchAppraisalList -->
+      <class name="com.ivm.android.scripts.UserLogin">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ivm.android.scripts.UserLogin@2ac273d3]" name="setUp" is-config="true" duration-ms="13748" started-at="2017-10-24T16:32:49Z" finished-at="2017-10-24T16:33:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUserLogin()[pri:0, instance:com.ivm.android.scripts.UserLogin@2ac273d3]" name="testUserLogin" duration-ms="32040" started-at="2017-10-24T16:33:02Z" finished-at="2017-10-24T16:33:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[app context and orientation of app]]>
+            </line>
+            <line>
+              <![CDATA[User enters username]]>
+            </line>
+            <line>
+              <![CDATA[User enters Password]]>
+            </line>
+            <line>
+              <![CDATA[User taps on Sign In button]]>
+            </line>
+            <line>
+              <![CDATA[User is logged into application successfully]]>
+            </line>
+            <line>
+              <![CDATA[User taps on the Sign out button]]>
+            </line>
+            <line>
+              <![CDATA[User is logged out from application successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testUserLogin -->
+        <test-method status="PASS" signature="testUserLoginInvalidCredentials()[pri:0, instance:com.ivm.android.scripts.UserLogin@2ac273d3]" name="testUserLoginInvalidCredentials" duration-ms="18412" started-at="2017-10-24T16:33:34Z" finished-at="2017-10-24T16:33:53Z">
+          <reporter-output>
+            <line>
+              <![CDATA[User enters username]]>
+            </line>
+            <line>
+              <![CDATA[User enters Password]]>
+            </line>
+            <line>
+              <![CDATA[User taps on Sign In button]]>
+            </line>
+            <line>
+              <![CDATA[Validation message appears]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testUserLoginInvalidCredentials -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.ivm.android.scripts.UserLogin@2ac273d3]" name="afterClass" is-config="true" duration-ms="1884" started-at="2017-10-24T16:33:53Z" finished-at="2017-10-24T16:33:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.ivm.android.scripts.UserLogin -->
+    </test> <!--  Login Test -->
+  </suite> <!-- Suite -->
+</testng-results>
