@@ -11,16 +11,16 @@
       <![CDATA[User taps on the Sign out button]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="60258" started-at="2017-10-30T12:05:47Z" finished-at="2017-10-30T12:06:47Z">
+  <suite name="Default suite" duration-ms="65477" started-at="2017-10-30T12:33:20Z" finished-at="2017-10-30T12:34:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="60258" started-at="2017-10-30T12:05:47Z" finished-at="2017-10-30T12:06:47Z">
+    <test name="Default test" duration-ms="65477" started-at="2017-10-30T12:33:20Z" finished-at="2017-10-30T12:34:25Z">
       <class name="com.ivm.android.scripts.SearchInventoryList">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ivm.android.scripts.SearchInventoryList@52a86356]" name="setUp" is-config="true" duration-ms="12059" started-at="2017-10-30T17:35:47Z" finished-at="2017-10-30T17:35:59Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ivm.android.scripts.SearchInventoryList@52a86356]" name="setUp" is-config="true" duration-ms="11953" started-at="2017-10-30T18:03:20Z" finished-at="2017-10-30T18:03:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchbyVehicleInventory()[pri:0, instance:com.ivm.android.scripts.SearchInventoryList@52a86356]" name="searchbyVehicleInventory" duration-ms="46325" started-at="2017-10-30T17:35:59Z" finished-at="2017-10-30T17:36:45Z">
+        <test-method status="PASS" signature="searchbyVehicleInventory()[pri:0, instance:com.ivm.android.scripts.SearchInventoryList@52a86356]" name="searchbyVehicleInventory" duration-ms="51645" started-at="2017-10-30T18:03:32Z" finished-at="2017-10-30T18:04:24Z">
           <reporter-output>
             <line>
               <![CDATA[search vehicle with VIN and result]]>
@@ -33,7 +33,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- searchbyVehicleInventory -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.ivm.android.scripts.SearchInventoryList@52a86356]" name="afterClass" is-config="true" duration-ms="1839" started-at="2017-10-30T17:36:45Z" finished-at="2017-10-30T17:36:47Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.ivm.android.scripts.SearchInventoryList@52a86356]" name="afterClass" is-config="true" duration-ms="1850" started-at="2017-10-30T18:04:24Z" finished-at="2017-10-30T18:04:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
