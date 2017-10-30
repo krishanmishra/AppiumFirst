@@ -36,7 +36,10 @@ public void TapmagnifiICon() {
 		clickOn(searchICon);
 		
 		String searchText=AppraisallistObject.search_text;
-		System.out.println(searchText);
+	   String searchtexts=getText(searchText);
+		System.out.println(searchtexts);
+		
+		Assert.assertEquals(searchtexts, "Search Appraisals");
 
 	}
 
