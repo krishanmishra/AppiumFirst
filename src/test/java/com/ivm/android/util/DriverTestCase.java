@@ -26,6 +26,8 @@ import org.testng.annotations.BeforeTest;
 
 import com.ivm.android.locators.LoginObject;
 import com.ivm.android.screenHelper.UserLoginHelper;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 
 
 
@@ -35,8 +37,7 @@ public abstract class DriverTestCase {
 	private static AppiumDriver driver ;
 	private static AppiumDriverLocalService service;
 	PropertyReader propertyReader = new PropertyReader();
-	
-	
+
     public String username= propertyReader.readApplicationFile("Username");
 	public String password= propertyReader.readApplicationFile("Password");
 	public String offUsername= propertyReader.readApplicationFile("OFF_Username");
@@ -53,6 +54,8 @@ public abstract class DriverTestCase {
 	            throw new AppiumServerHasNotBeenStartedLocallyException(
 	                    "An appium server node is not started!");
 	        }
+	        
+	        
 	        
 //	        File f=new File("src/test/java");
 //			File fs=new File(f,"ApiDemos-debug.apk");    

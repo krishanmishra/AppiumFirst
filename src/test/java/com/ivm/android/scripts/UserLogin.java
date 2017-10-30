@@ -70,17 +70,21 @@ public class UserLogin extends DriverTestCase{
 		// Enter xID into xID field
 		userLoginHelper.enterUsername(invalidUsername);
 		Reporter.log("User enters username");
+		
 
 		// Enter Passcode into passcode field
 		userLoginHelper.enterPasscode(invalidPassword);
 		Reporter.log("User enters Password");
+		
 
 		// Tap on the Sign In button
 		userLoginHelper.tapOnSignIn();
 		Reporter.log("User taps on Sign In button");
+	
 
 		// Verify user is logged into application
 		userLoginHelper.verifyValidationMessage();
 		Reporter.log("Validation message appears");
+		
 	}
 }
