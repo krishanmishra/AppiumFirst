@@ -6,7 +6,14 @@
       <class name="com.ivm.android.scripts.UserLogin"/>
         <class name="com.ivm.android.scripts.Settings" ></class>
        <class name="com.ivm.android.scripts.SearchAppraisalList" ></class>
-      </classes>    
+       <class name="com.ivm.android.scripts.SearchInventoryList" ></class>
+       <class name="com.ivm.android.scripts.SearchInventoryList" ></class>
+       <class name="com.ivm.android.scripts.VerifyviewPhotoandNoteswhenviewinganexistingappraisal" ></class>
+        <class name="com.ivm.android.scripts.VerifyReappraiseAppraisalDetailsPage" ></class>
+       
+       
+       
+     </classes>    
   </test> <!-- Test -->
   
 

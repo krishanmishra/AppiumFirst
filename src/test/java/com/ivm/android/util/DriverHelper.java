@@ -86,6 +86,22 @@ public abstract class DriverHelper extends DriverTestCase {
 		int i = ran.nextInt(number);
 		return i;
 	}
+	
+	// Get random string
+		public String randomString(int len) {
+			String AB = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			Random rnd = new Random();
+			StringBuilder sb = new StringBuilder(len);
+			for (int i = 0; i < len; i++)
+				sb.append(AB.charAt(rnd.nextInt(AB.length())));
+			return sb.toString();
+		}
+	
+	
+	
+	
+	
+	
 
 	// Hide KeyPad button
 	public void hideKeyPad()
@@ -186,7 +202,24 @@ public abstract class DriverHelper extends DriverTestCase {
 			String text = getDriver().findElement(ByLocator(locator)).getText();
 			return text;
 		}
-	
+		
+		// Wait for element not present
+		public void WaitForElementNotPresent(String locator, int timeout) {
+			for (int i = 0; i < timeout; i++) {
+				if (!isElementPresent(locator)) {
+					break;
+				}
+
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}	
+		
+		
+		
 	//wait for element to present
 	public void waitForElementPresent(String locator, int time)
 	{

@@ -4,7 +4,8 @@ public class LoginObject {
 	
 	//locator class is public static final which means it can be accessed by all and cannot be changed.
 	
-			public final static String Username = "com.ivm.appraisal:id/username";
+			public final static String Username = "com.ivm.appraisal:id/user_account";
+			public final static String Usernames = "com.ivm.appraisal:id/username";
 			public final static String Password = "com.ivm.appraisal:id/password";
 			public final static String login_button = "com.ivm.appraisal:id/btn_login";
 			public final static String CheckwhatsNewpopup = "android.widget.ImageButton";

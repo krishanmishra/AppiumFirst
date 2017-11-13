@@ -1,43 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
     <line>
-      <![CDATA[search vehicle with VIN and result]]>
+      <![CDATA[app context and orientation of app]]>
     </line>
     <line>
-      <![CDATA[User tap on back action return to Home]]>
+      <![CDATA[User enters username]]>
+    </line>
+    <line>
+      <![CDATA[User enters Password]]>
+    </line>
+    <line>
+      <![CDATA[User taps on Sign In button]]>
+    </line>
+    <line>
+      <![CDATA[User is logged into application successfully]]>
     </line>
     <line>
       <![CDATA[User taps on the Sign out button]]>
     </line>
+    <line>
+      <![CDATA[User is logged out from application successfully]]>
+    </line>
+    <line>
+      <![CDATA[User enters username]]>
+    </line>
+    <line>
+      <![CDATA[User enters Password]]>
+    </line>
+    <line>
+      <![CDATA[User taps on Sign In button]]>
+    </line>
+    <line>
+      <![CDATA[Validation message appears]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65477" started-at="2017-10-30T12:33:20Z" finished-at="2017-10-30T12:34:25Z">
+  <suite name="Default suite" duration-ms="126545" started-at="2017-11-13T07:03:48Z" finished-at="2017-11-13T07:05:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="65477" started-at="2017-10-30T12:33:20Z" finished-at="2017-10-30T12:34:25Z">
-      <class name="com.ivm.android.scripts.SearchInventoryList">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ivm.android.scripts.SearchInventoryList@52a86356]" name="setUp" is-config="true" duration-ms="11953" started-at="2017-10-30T18:03:20Z" finished-at="2017-10-30T18:03:32Z">
+    <test name="Default test" duration-ms="126545" started-at="2017-11-13T07:03:48Z" finished-at="2017-11-13T07:05:55Z">
+      <class name="com.ivm.android.scripts.UserLogin">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ivm.android.scripts.UserLogin@52a86356]" name="setUp" is-config="true" duration-ms="67814" started-at="2017-11-13T12:33:48Z" finished-at="2017-11-13T12:34:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchbyVehicleInventory()[pri:0, instance:com.ivm.android.scripts.SearchInventoryList@52a86356]" name="searchbyVehicleInventory" duration-ms="51645" started-at="2017-10-30T18:03:32Z" finished-at="2017-10-30T18:04:24Z">
+        <test-method status="PASS" signature="testUserLogin()[pri:0, instance:com.ivm.android.scripts.UserLogin@52a86356]" name="testUserLogin" duration-ms="37936" started-at="2017-11-13T12:34:56Z" finished-at="2017-11-13T12:35:34Z">
           <reporter-output>
             <line>
-              <![CDATA[search vehicle with VIN and result]]>
+              <![CDATA[app context and orientation of app]]>
             </line>
             <line>
-              <![CDATA[User tap on back action return to Home]]>
+              <![CDATA[User enters username]]>
+            </line>
+            <line>
+              <![CDATA[User enters Password]]>
+            </line>
+            <line>
+              <![CDATA[User taps on Sign In button]]>
+            </line>
+            <line>
+              <![CDATA[User is logged into application successfully]]>
             </line>
             <line>
               <![CDATA[User taps on the Sign out button]]>
             </line>
+            <line>
+              <![CDATA[User is logged out from application successfully]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- searchbyVehicleInventory -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.ivm.android.scripts.SearchInventoryList@52a86356]" name="afterClass" is-config="true" duration-ms="1850" started-at="2017-10-30T18:04:24Z" finished-at="2017-10-30T18:04:25Z">
+        </test-method> <!-- testUserLogin -->
+        <test-method status="PASS" signature="testUserLoginInvalidCredentials()[pri:0, instance:com.ivm.android.scripts.UserLogin@52a86356]" name="testUserLoginInvalidCredentials" duration-ms="18637" started-at="2017-11-13T12:35:34Z" finished-at="2017-11-13T12:35:53Z">
+          <reporter-output>
+            <line>
+              <![CDATA[User enters username]]>
+            </line>
+            <line>
+              <![CDATA[User enters Password]]>
+            </line>
+            <line>
+              <![CDATA[User taps on Sign In button]]>
+            </line>
+            <line>
+              <![CDATA[Validation message appears]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testUserLoginInvalidCredentials -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.ivm.android.scripts.UserLogin@52a86356]" name="afterClass" is-config="true" duration-ms="2121" started-at="2017-11-13T12:35:53Z" finished-at="2017-11-13T12:35:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.ivm.android.scripts.SearchInventoryList -->
+      </class> <!-- com.ivm.android.scripts.UserLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

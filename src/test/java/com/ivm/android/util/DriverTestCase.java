@@ -38,10 +38,10 @@ public abstract class DriverTestCase {
 	private static AppiumDriverLocalService service;
 	PropertyReader propertyReader = new PropertyReader();
 
-    public String username= propertyReader.readApplicationFile("Username");
-	public String password= propertyReader.readApplicationFile("Password");
-	public String offUsername= propertyReader.readApplicationFile("OFF_Username");
-	public String offPassword= propertyReader.readApplicationFile("OFF_password");
+  //  public String username= propertyReader.readApplicationFile("Username");
+	//public String password= propertyReader.readApplicationFile("Password");
+//	public String offUsername= propertyReader.readApplicationFile("OFF_Username");
+//	public String offPassword= propertyReader.readApplicationFile("OFF_password");
 	
 	 @BeforeClass
 	public static void setUp() throws MalformedURLException

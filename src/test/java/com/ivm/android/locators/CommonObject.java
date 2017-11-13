@@ -7,6 +7,7 @@ public class CommonObject {
 		
 		public final static String alertpopup_text = "android:id/message";
 		public final static String alert_OK = "android:id/button1";
+		public final static String alert_cancel = "android:id/button2";
 		public final static String validation_message = "com.ivm.appraisal:id/textinput_error";
 		
 		public final static String snackbar_text ="com.ivm.appraisal:id/snackbar_text";
@@ -20,7 +21,16 @@ public class CommonObject {
 		public final static String Home_appraisals_item = "com.ivm.appraisal:id/appraisals_item";
 		public final static String permission_allow = "com.android.packageinstaller:id/permission_allow_button";
 		public final static String permission_deny = "com.android.packageinstaller:id/permission_deny_button";
-		//com.ivm.appraisal:id/discard
+		public final static String skipScan = "//android.widget.Button[@text='SKIP SCAN']";
+		public final static String cancelScan = "com.ivm.appraisal:id/btn_cancel";
+		public final static String progressBar = "android.widget.ProgressBar";
+		public final static String discardscreen = "com.ivm.appraisal:id/discard";
+		
+		
+		
+		
+		
+		
 	
 	
 	

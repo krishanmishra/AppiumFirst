@@ -55,10 +55,13 @@ public class UserLoginHelper extends DriverHelper{
 	public void verifyUserLoggedIn()
 	{
 		String checknewpopup=LoginObject.CheckwhatsNewpopup;
-		String user_locator=LoginObject.Username;
+		String user_locator=LoginObject.Usernames;
+		String dealer_locator=LoginObject.DealerName;
 		clickOn(checknewpopup);
 		boolean flag = isElementPresent(user_locator);
-		Assert.assertTrue(flag, "Invalid credentials. Please try again.");	
+		boolean flag1 = isElementPresent(dealer_locator);
+		Assert.assertTrue(flag, "User name is not displaying on Home screen");
+		Assert.assertTrue(flag1, "Dealer is not displaying on Home screen");
 	}
 
 	public void loggedOut() throws InterruptedException 
