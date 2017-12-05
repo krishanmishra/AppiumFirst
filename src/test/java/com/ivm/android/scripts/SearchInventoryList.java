@@ -3,24 +3,31 @@ package com.ivm.android.scripts;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import com.ivm.android.screenHelper.AppraisallistHelper;
 import com.ivm.android.screenHelper.InventoryListHelper;
 import com.ivm.android.screenHelper.UserLoginHelper;
 import com.ivm.android.util.DriverTestCase;
 
 public class SearchInventoryList extends DriverTestCase {
-	
-	
-	
+	// Declare the Objects
+	InventoryListHelper inventorylistHelper;
+	UserLoginHelper userloginhelper;
+			
 	// Initialize the objects
-	InventoryListHelper inventorylistHelper = new InventoryListHelper(getDriver());
-	UserLoginHelper userloginhelper=new UserLoginHelper(getDriver());
+	 private void initializeObject()
+		 {
+			 inventorylistHelper = new InventoryListHelper(getDriver());
+			 userloginhelper=new UserLoginHelper(getDriver());
+		}
+		
+	// Initialize the variable
 	String searchvehicle="2014";
-	
-	
+		
 	@Test(enabled = true)
 	public void searchbyVehicleInventory() throws InterruptedException
 	{
+		// Initialize the objects
+		 initializeObject();	
+				
 		//user logged in successfully
 		login("ON");
 	
@@ -41,18 +48,5 @@ public class SearchInventoryList extends DriverTestCase {
 		// Tap on the Sign out button
 		userloginhelper.loggedOut();
 		Reporter.log("User taps on the Sign out button");
-		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }

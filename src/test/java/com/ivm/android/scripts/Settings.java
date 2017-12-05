@@ -9,9 +9,17 @@ import com.ivm.android.util.DriverTestCase;
 
 public class Settings extends DriverTestCase {
 
-	// Initialize the objects
-	SettingsHelper settingHelper = new SettingsHelper(getDriver());
-	UserLoginHelper userloginhelper=new UserLoginHelper(getDriver());
+	// Declare the Objects
+	SettingsHelper settingHelper;
+	UserLoginHelper userloginhelper;
+		
+ // Initialize the objects
+ private void initializeObject(){
+	settingHelper = new SettingsHelper(getDriver());
+	userloginhelper=new UserLoginHelper(getDriver());
+		}
+	
+	//declare variable	
 	String Switch_ON = "ON";
 	String Switch_OFF = "OFF";
 	String allowaccess = "Allow";
@@ -20,6 +28,9 @@ public class Settings extends DriverTestCase {
 	@Test(enabled = true)
 	public void SettingperissionON() throws InterruptedException 
 	{		
+		// Initialize the objects
+		initializeObject();	
+			
 		//user logged in successfully
 		login("ON");
 		//userloginhelper.verifyUserLoggedIn();
@@ -45,8 +56,7 @@ public class Settings extends DriverTestCase {
 		
 		//ON and Off Photos On Devices
 		settingHelper.savePhotosOnDevices(Switch_ON,allowaccess);
-		
-								
+										
 		//back to Home screen
 		settingHelper.backToHome();
 		
@@ -57,17 +67,16 @@ public class Settings extends DriverTestCase {
 	}
 	@Test(enabled = true)
 	public void SettingperissionOFF() throws InterruptedException 
-	{		
+	{	
+		// Initialize the objects
+		initializeObject();	
+		
 		//user logged in successfully
 		login("ON");
-		//userloginhelper.verifyUserLoggedIn();
-						
+								
 		//Go to Setting screen
-		settingHelper.Settingsscreen();
+		settingHelper.Settingsscreen();			
 				
-		//verify the page Title
-		settingHelper.pagetitle();
-		
 		//Go to About screen
 		settingHelper.about();
 		Reporter.log("About screen display");
@@ -75,15 +84,14 @@ public class Settings extends DriverTestCase {
 		//verify alert pop up text
 		settingHelper.googleAlert();
 						
-				//verify alert pop up text
+		//verify alert pop up text
 		settingHelper.savePhotosAlert();
 		
 		//ON and Off google Analytics
 		settingHelper.GoogleAnalytics(Switch_OFF);
 		
 		//ON and Off Photos On Devices
-		settingHelper.savePhotosOnDevices(Switch_ON,denyaccess);
-				
+		settingHelper.savePhotosOnDevices(Switch_ON,denyaccess);	
 								
 		//back to Home screen
 		settingHelper.backToHome();

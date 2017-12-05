@@ -24,7 +24,7 @@ public class AppraisallistObject {
 			public final static String addtoinventory = "com.ivm.appraisal:id/button_add_to_inventory";
 			public final static String gearICon = "com.ivm.appraisal:id/collapse";
 			public final static String re_Appraise = "com.ivm.appraisal:id/reappraise";
-			public final static String emailView = "com.ivm.appraisal:id/email_view";
+			public final static String emailView = "com.ivm.appraisal:id/email_view_with_inventory";
 			public final static String printView = "com.ivm.appraisal:id/print_view";
 			public final static String dismisslabel_classification = "com.ivm.appraisal:id/classification_label_dismiss";
 			public final static String booksTextview = "//android.widget.TextView[@class='Tap book for pricing details.']";

@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.ivm.android.scripts.VerifyReappraiseAppraisalDetailsPage">
+      <class name="com.ivm.android.scripts.UserLogin">
         <methods>
-          <include name="ReappraiseVehicle"/>
+          <include name="testUserLoginInvalidCredentials"/>
+          <include name="testUserLogin"/>
           <include name="setUp"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.ivm.android.scripts.VerifyReappraiseAppraisalDetailsPage -->
+      </class> <!-- com.ivm.android.scripts.UserLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

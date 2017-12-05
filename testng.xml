@@ -8,12 +8,11 @@
        <class name="com.ivm.android.scripts.SearchAppraisalList" ></class>
        <class name="com.ivm.android.scripts.SearchInventoryList" ></class>
        <class name="com.ivm.android.scripts.SearchInventoryList" ></class>
-       <class name="com.ivm.android.scripts.VerifyviewPhotoandNoteswhenviewinganexistingappraisal" ></class>
+       <class name="com.ivm.android.scripts.VerifyviewPhotoandNotes" ></class>
         <class name="com.ivm.android.scripts.VerifyReappraiseAppraisalDetailsPage" ></class>
-       
-       
-       
-     </classes>    
+        <class name="com.ivm.android.scripts.ValidateNewUserAccount" ></class>
+        <class name="com.ivm.android.scripts.VerifyForgotPassword" ></class>
+        </classes>    
   </test> <!-- Test -->
   
 

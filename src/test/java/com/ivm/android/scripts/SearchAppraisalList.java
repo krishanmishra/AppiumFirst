@@ -8,17 +8,27 @@ import com.ivm.android.screenHelper.UserLoginHelper;
 import com.ivm.android.util.DriverTestCase;
 
 public class SearchAppraisalList extends DriverTestCase{
-	
-	
+	// Declare the Objects
+	AppraisallistHelper appraisallistHelper;
+	UserLoginHelper userloginhelper;
+			
 	// Initialize the objects
-	AppraisallistHelper appraisallistHelper = new AppraisallistHelper(getDriver());
-	UserLoginHelper userloginhelper=new UserLoginHelper(getDriver());
+	 private void initializeObject()
+	 {
+		 appraisallistHelper = new AppraisallistHelper(getDriver());
+		 userloginhelper=new UserLoginHelper(getDriver());;
+	}
+	
+	 //declare variable
 	String searchvehicle="2014";
 	
 	
 	@Test(enabled = true)
 	public void searchbyVehicle() throws InterruptedException
 	{
+		// Initialize the objects
+		initializeObject();	
+				
 		//user logged in successfully
 		login("ON");
 	
@@ -40,10 +50,5 @@ public class SearchAppraisalList extends DriverTestCase{
 		userloginhelper.loggedOut();
 		Reporter.log("User taps on the Sign out button");
 		
-	}
-	
-	
-	
-	
-	
+	}	
 }

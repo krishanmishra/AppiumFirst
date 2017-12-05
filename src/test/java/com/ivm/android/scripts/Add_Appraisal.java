@@ -9,6 +9,8 @@ import com.ivm.android.screenHelper.UserLoginHelper;
 import com.ivm.android.util.DriverTestCase;
 
 public class Add_Appraisal extends DriverTestCase {
+	
+	
 	// Initialize the objects
 	    AddAppraisalHelper addappraisalHelper = new AddAppraisalHelper(getDriver());
 	    AppraisallistHelper appraisallisthelper=new AppraisallistHelper(getDriver());

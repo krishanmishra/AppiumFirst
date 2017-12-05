@@ -197,7 +197,7 @@ public abstract class DriverHelper extends DriverTestCase {
 	
 	// Store text from a locator
 		public String getText(String locator) {
-			waitForElementPresent(locator, 20);
+			waitForElementPresent(locator,10);
 			Assert.assertTrue(isElementPresent(locator), "Element Locator :"+ locator + " Not found");
 			String text = getDriver().findElement(ByLocator(locator)).getText();
 			return text;

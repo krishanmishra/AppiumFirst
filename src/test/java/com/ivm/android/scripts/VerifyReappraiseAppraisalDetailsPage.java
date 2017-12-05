@@ -51,10 +51,4 @@ public class VerifyReappraiseAppraisalDetailsPage extends DriverTestCase {
 		
 	}
 	
-	
-	
-	
-	
-	
-
 }

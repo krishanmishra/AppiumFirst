@@ -184,12 +184,28 @@ public void completeAppraisal() {
 	Assert.assertTrue(flag, "edit vehicle icon is not showing");
 	clickOn(flagICon);
 	
+	String alerttext=CommonObject.alertpopup_text;
+	boolean flagt=isElementPresent(alerttext);
+	
 	String appraisalcomplete=AppraisaldetailsObject.appraisalComplete;
-	clickOn(appraisalcomplete);
+		
+	if(flagt == true)
+	{
+		Assert.assertEquals(getText(alerttext), "Appraised value is $0, save appraisal?");
+		String alertok=CommonObject.alert_OK;
+		clickOn(alertok);
+		clickOn(appraisalcomplete);
+	}else
+	{
+		clickOn(appraisalcomplete);
+	}
+	
 	
 	String apraisallist=AppraisallistObject.appraisalTitle;
 	String appraisaltitle=getText(apraisallist);
-	Assert.assertEquals(appraisaltitle, "APPRAISALS");
+		
+	Assert.assertTrue(appraisaltitle.equalsIgnoreCase("APPRAISALS"));
+	
 	
 	boolean flagg = isElementPresent(YMMT);
 	Assert.assertTrue(flagg, "No vehicle found message showing");
@@ -218,7 +234,7 @@ public void ClickOnNotes() {
 	clickOn(notesbutton);
 		
 	String notesTitle=CommonObject.screenTitle;
-	Assert.assertEquals("NOTES", getText(notesTitle));
+	Assert.assertTrue(getText(notesTitle).equalsIgnoreCase("NOTES"));
 	
 	String notesButton=AppraisaldetailsObject.addNotes;
 	boolean flag = isElementPresent(notesButton);
@@ -239,8 +255,11 @@ public void ClickOnPhotosButton() {
 	clickOn(photosbutton);
 	
 	String title=CommonObject.screenTitle;
-	Assert.assertEquals("VEHICLE PHOTOS", getText(title));
-			
+	//Assert.assertEquals("VEHICLE PHOTOS", getText(title));
+	Assert.assertTrue(getText(title).equalsIgnoreCase("VEHICLE PHOTOS"));
+	
+	
+	
 	String addphotobuttons=AppraisaldetailsObject.addPhotobutton;
 	String selectPhotoLink=AppraisaldetailsObject.selectPhotolink;
 	
@@ -253,6 +272,22 @@ public void ClickOnPhotosButton() {
 	{
 		System.out.println("Appraisal vehicle are in view mode");
 	}
+	
+	String noPhotosmessage=AppraisaldetailsObject.NoPhotosmessage;
+	String noPhotos=AppraisaldetailsObject.NoPhotos;
+	
+  boolean flag1=isElementPresent(noPhotosmessage)&&isElementPresent(noPhotos);
+	
+	if(flag1==true)
+	{
+		Assert.assertTrue("You must reappraise vehicle to add photos.".equalsIgnoreCase(getText(noPhotosmessage)));
+		Assert.assertTrue("No Photos!".equalsIgnoreCase(getText(noPhotos)));
+		System.out.println("Photos are not displaying");
+	}else 
+	{
+		System.out.println("Photos are there");
+	}
+	
 	
 	String backlink=CommonObject.backArrow;
 	clickOn(backlink);

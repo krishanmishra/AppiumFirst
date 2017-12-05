@@ -42,13 +42,15 @@ public class SettingsHelper extends DriverHelper
 	
 	public void about(){
 		
+		String screenTitle=SettingObject.screen_title;
+		boolean flag = isElementPresent(screenTitle);
+		Assert.assertTrue(flag, "screen title is not present");
+		
 		String about=SettingObject.about_link;
 		clickOn(about);
-		
-        String screenTitle=SettingObject.screen_title;
-		
-		boolean flag = isElementPresent(screenTitle);
-		Assert.assertTrue(flag, "about screen not present");	
+		       		
+		boolean flag1 = isElementPresent(screenTitle);
+		Assert.assertTrue(flag1, "about screen not present");	
 		
 		
 		String about_id=SettingObject.about_id;
@@ -60,8 +62,8 @@ public class SettingsHelper extends DriverHelper
 		String back=SettingObject.screen_back;
 		clickOn(back);
 				
-		boolean flag1 = isElementPresent(screenTitle);
-		Assert.assertTrue(flag1, "setting screen not present");
+		boolean flag2 = isElementPresent(screenTitle);
+		Assert.assertTrue(flag2, "setting screen not present");
 		System.out.println(getText(screenTitle));
 						
 	}

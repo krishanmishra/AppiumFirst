@@ -13,7 +13,9 @@ public class DrawerObject {
 	public final static String send_Feedback = "//android.widget.CheckedTextView[@text='Send Feedback']";
 	public final static String changeDealership = "//android.widget.CheckedTextView[@text='Change Dealership']";
 	public final static String logout = "//android.widget.CheckedTextView[@text='Logout']";
-		
-	
+	public final static String feedback_text = "com.ivm.appraisal:id/feedbackTextContainer";	
+	public final static String inputFeedback = "com.ivm.appraisal:id/txtFeedback";
+	public final static String sendFeedback = "com.ivm.appraisal:id/btn_send_feedback_bottom";
+	public final static String inputCount = "com.ivm.appraisal:id/textinput_counter";
 	
 }

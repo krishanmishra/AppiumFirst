@@ -37,13 +37,8 @@ public abstract class DriverTestCase {
 	private static AppiumDriver driver ;
 	private static AppiumDriverLocalService service;
 	PropertyReader propertyReader = new PropertyReader();
-
-  //  public String username= propertyReader.readApplicationFile("Username");
-	//public String password= propertyReader.readApplicationFile("Password");
-//	public String offUsername= propertyReader.readApplicationFile("OFF_Username");
-//	public String offPassword= propertyReader.readApplicationFile("OFF_password");
-	
-	 @BeforeClass
+ 
+	@BeforeClass
 	public static void setUp() throws MalformedURLException
 	{
 		 service = AppiumDriverLocalService.buildDefaultService();
@@ -54,8 +49,7 @@ public abstract class DriverTestCase {
 	            throw new AppiumServerHasNotBeenStartedLocallyException(
 	                    "An appium server node is not started!");
 	        }
-	        
-	        
+	              
 	        
 //	        File f=new File("src/test/java");
 //			File fs=new File(f,"ApiDemos-debug.apk");    
@@ -63,8 +57,9 @@ public abstract class DriverTestCase {
 		//capabilities.setCapability("appium-version", "1.0");
 		//capabilities.setCapability("platformName", "Android");
 		//capabilities.setCapability("platformVersion", "5.0.1");
-		//capabilities.setCapability("deviceName", "baf8e4a4");
-		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "krishanemulator");
+	  //capabilities.setCapability("deviceName", "baf8e4a4");
+		//capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "krishanemulator");
+	capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "android device");
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
 		//cap.setCapability(MobileCapabilityType.APP, fs.getAbsolutePath());
 		capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE,"com.ivm.appraisal" );
